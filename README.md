@@ -1,1 +1,3 @@
-# capgemini-brasil-proway
+# Documentação das questões elaboradas para o processo seletivo da Capgemini
+### Questão 01
+Nessa primeira questão, eu iniciei pedindo ao usuário que digitasse o número referente ao tamanho da escada, armazenando ele em uma variável chamada "n". Após isso, eu inicializei em 1, uma variável chamada "cont" que servirá como um contador, e criei uma variável auxiliar chamada "aux", igualando ela a variável "n". Depois disso, criei um "for" para rodar a quantidade de vezes que o usuário digitou e dentro dele fiz mais dois "for", o primeiro inserindo espaços e diminuindo a quantidade que se repetem com a variável "aux" e o segundo inserindo os asteriscos e aumentando a quantidade que se repetem com a variável "cont".
