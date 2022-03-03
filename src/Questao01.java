@@ -1,23 +1,42 @@
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Questao01 {
-    /*  Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere * e espaços.
-        A base e altura da escada devem ser iguais ao valor de n.
-        A última linha não deve conter nenhum espaço.
-    */
     public static void main(String[] args) {
-        int n = Integer.parseInt(JOptionPane.showInputDialog("Digite o número referente ao tamanho da escada"));
-        int cont = 1, aux = n;
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<aux; j++){
-                System.out.print(" ");
-            }
-            aux--;
-            for (int k=0; k<cont;  k++){
-                System.out.print("*");
-            }
-            cont++;
-            System.out.println();
+        ArrayList<Integer> numerosArrayList = new ArrayList();
+
+        int contador = 0, loopingArrayList = 0;
+
+        while (loopingArrayList == 0) {
+            int a = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor para adicionar a lista:"));
+
+            numerosArrayList.add(a);
+
+            contador++;
+
+            loopingArrayList = Integer.parseInt(JOptionPane.showInputDialog("Para sair digite 1"));
         }
+        Collections.sort(numerosArrayList);
+
+        System.out.println("AGORA" + numerosArrayList);
+
+        if (numerosArrayList.size() % 2 == 0) {
+
+            int valorDoCentro = numerosArrayList.size() / 2;
+            int valorProximoAoCentro = valorDoCentro + 1;
+            float somaValoresDoCentro = numerosArrayList.get(valorDoCentro  - 1) + numerosArrayList.get(valorProximoAoCentro  - 1 );
+            float valorMediana =  somaValoresDoCentro / 2;
+
+            System.out.println("Valor da mediana par é " + valorMediana);
+        } else {
+
+            int valorDoCentro = numerosArrayList.size() / 2;
+            int valorMediana = numerosArrayList.get(valorDoCentro);
+
+            System.out.println("Valor da mediana impar é " + valorMediana);
+        }
+
+
     }
-}
+    }
