@@ -9,9 +9,10 @@ public class Questao01 {
         int contador = 0, loopingArrayList = 0;
 
         while (loopingArrayList == 0) {
-            int a = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor para adicionar a lista:"));
+            int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor para adicionar a lista:"));
 
-            numerosArrayList.add(a);
+            numerosArrayList.add(numero);
+
 
             contador++;
 
