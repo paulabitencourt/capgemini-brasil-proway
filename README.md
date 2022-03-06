@@ -14,7 +14,7 @@
 
 ### Questão 03
 
-- Ao rodar o programa, é necessário inserir a palavra que será utilizada para descobrir se suas substrings são anagramas ou não, sendo ele em valor "String".
+- Ao rodar o programa, é necessário inserir a frase que será utilizada para ser encriptada.
 
 ### EXPLICAÇÃO SOBRE AS QUESTÕES
 
